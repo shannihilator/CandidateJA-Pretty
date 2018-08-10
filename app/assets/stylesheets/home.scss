@@ -23,3 +23,43 @@ html {
     border: solid white 1px;
     display: inline-block;
 }
+
+.subtitle {
+    margin: 30px 0px 30px 30px;
+}
+
+.tab {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.btnHolder {
+    margin: 0px 10px 0px 10px;
+    background-color: #19ACFF;
+    border-bottom: solid #0067FF 5px;
+}
+
+.btn {
+    background-color: inherit;
+    border: none;
+    margin: 20px 40px 15px 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+// Table Styling
+
+table {
+    border-collapse: collapse;
+    margin-left: 30px;
+}
+
+table, td, th {
+    border: solid black 1px;
+    padding: 2px;
+}

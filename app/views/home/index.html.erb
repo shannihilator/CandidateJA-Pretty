@@ -1,12 +1,9 @@
 
+<%= render "header" %>
 
+<%= render "nav" %>
 
-<div id="title"> 
-    <div class="titleBorder"> <%= image_tag ("saleLogo.jpg"), id: "logo"%> </div>
-    <div class="titleBorder"> SalesLoft Offline Coding Evaluation </div>
-</div>
-
-<h2> SalesLoft: Level 1 </h2>
+<h2 class="subtitle"> SalesLoft: Level 1 </h2>
 
     <table>
         <tr>
@@ -22,12 +19,4 @@
         </tr>
         <% end %>
     </table>
-
-<h2> SalesLoft: Level 2 </h2>
-
-    <%= button_to 'Display Frequencies', home_displayFreq_path, method: :get %>
-
-<h2> SalesLoft: Level 3 </h2>
-
-    <%= button_to 'Display Frequencies', home_displayDup_path, method: :get %>
 
