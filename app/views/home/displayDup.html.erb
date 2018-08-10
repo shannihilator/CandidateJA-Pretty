@@ -1,3 +1,18 @@
 <%= render "header" %>
 
 <%= render "nav" %>
+
+<% if @duplicates.length == 0 %>
+    <h2>There were no duplicates found</h2>
+<% else %>
+    <h2> <%= pluralize(@duplicates.length, "possible duplicate") %> found </h2>
+
+    <table>
+        <% @duplicates.each do |dup| %>
+            <tr>
+                <td><%= dup %></th>
+            </tr>
+        <% end %>
+    </table>
+
+<% end %>
