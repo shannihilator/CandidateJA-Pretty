@@ -1,0 +1,17 @@
+<h1> SalesLoft: Level 2 </h1>
+
+    <div>
+        <table>
+            <tr>
+                <th>Character</th>
+                <th>Count</th>
+            </tr>
+        <% @frequency.each do |k, v| %>
+            <tr>
+                <th><%= k %></th>
+                <th><%= v %></th>
+            </tr>
+        <% end %>
+    </div>
+
+<%= button_to  "Back to Level 1", root_path, method: :get %>

@@ -1,0 +1,25 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+    font-family: 'Trebuchet MS';
+}
+
+#title {
+    text-align: center;
+    font-size: 36px;
+    padding: 20px;
+    border-bottom: solid black 2px;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.titleBorder {
+    border: solid white 1px;
+    display: inline-block;
+}

@@ -1,0 +1,33 @@
+
+
+
+<div id="title"> 
+    <div class="titleBorder"> <%= image_tag ("saleLogo.jpg"), id: "logo"%> </div>
+    <div class="titleBorder"> SalesLoft Offline Coding Evaluation </div>
+</div>
+
+<h2> SalesLoft: Level 1 </h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Job Title</th>
+        </tr>
+        <% @first_name.zip(@email_address, @title).each do |name, email, title| %>
+        <tr>
+            <td><%= name %></td>
+            <td style="padding: 0px 30px 0px 30px;"><%= email %></td>
+            <td><%= title %></td>
+        </tr>
+        <% end %>
+    </table>
+
+<h2> SalesLoft: Level 2 </h2>
+
+    <%= button_to 'Display Frequencies', home_displayFreq_path, method: :get %>
+
+<h2> SalesLoft: Level 3 </h2>
+
+    <%= button_to 'Display Frequencies', home_displayDup_path, method: :get %>
+
